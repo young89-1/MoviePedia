@@ -2,7 +2,6 @@
 const movieDIV = document.querySelector(".results");
 const searchForm = document.getElementById("search-form");
 const searchInput = document.querySelector(".search-bar")
-console.log(movieDIV);
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
