@@ -1,5 +1,4 @@
-let movieDIV = document.querySelector(".results");
-console.log(movieDIV);
+let movieDIV_wl = document.querySelector(".results");
 
 document.addEventListener("DOMContentLoaded", () => {
   const movieData = JSON.parse(localStorage.getItem("watchlist"));
@@ -7,9 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function renderMovies(data) {
-  movieDIV.innerHTML = "";
+  movieDIV_wl.innerHTML = "";
   data.forEach((movie) => {
-    console.log(movie);
     const div = document.createElement("div");
     div.className = "col-4 my-2";
 
@@ -22,7 +20,7 @@ function renderMovies(data) {
           <a href="#" class="btn btn-primary" onclick="saveToWatchlist('${movie.imdbID}')" >Add</a>
           </div>
       </div>`;
-    movieDIV.appendChild(div);
+    movieDIV_wl.appendChild(div);
   });
 }
 

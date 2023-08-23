@@ -1,7 +1,4 @@
-// console.log(movieData);
 
-// movieData.forEach((movie) => console.log(movie));
-// console.log(movieData);
 const movieDIV = document.querySelector(".results");
 const searchForm = document.getElementById("search-form");
 const searchInput = document.querySelector(".search-bar")
